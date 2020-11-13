@@ -4,7 +4,7 @@ import {render} from 'ink'
 import Game from './components/Game'
 
 const App = () => (
-	<Game/>
+  <Game/>
 );
 
 render(<App/>);

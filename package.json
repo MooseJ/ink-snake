@@ -1,50 +1,50 @@
 {
-	"name": "ink-snake",
-	"version": "0.0.0",
-	"license": "MIT",
-	"bin": "dist/cli.js",
-	"engines": {
-		"node": ">=10"
-	},
-	"scripts": {
-		"build": "tsc",
-		"start": "npm run build && dist/cli.js",
-		"pretest": "npm run build",
-		"test": "xo && ava"
-	},
-	"files": [
-		"dist/cli.js"
-	],
-	"dependencies": {
-		"@types/ink-big-text": "^1.2.0",
-		"@types/ink-gradient": "^2.0.1",
-		"ink": "^3.0.8",
-		"ink-big-text": "^1.2.0",
-		"ink-gradient": "^2.0.0",
-		"react": "^17.0.1"
-	},
-	"devDependencies": {
-		"@sindresorhus/tsconfig": "^0.7.0",
-		"@types/react": "^16.9.56",
-		"chalk": "^4.1.0",
-		"eslint-plugin-react": "^7.21.5",
-		"eslint-plugin-react-hooks": "^4.2.0",
-		"typescript": "^4.0.5"
-	},
-	"ava": {
-		"typescript": {
-			"extensions": [
-				"tsx"
-			],
-			"rewritePaths": {
-				"source/": "dist/"
-			}
-		}
-	},
-	"xo": {
-		"extends": "xo-react",
-		"rules": {
-			"react/prop-types": "off"
-		}
-	}
+  "name": "ink-snake",
+  "version": "0.0.0",
+  "license": "MIT",
+  "bin": "dist/cli.js",
+  "engines": {
+    "node": ">=10"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "npm run build && dist/cli.js",
+    "pretest": "npm run build",
+    "test": "xo && ava"
+  },
+  "files": [
+    "dist/cli.js"
+  ],
+  "dependencies": {
+    "@types/ink-big-text": "^1.2.0",
+    "@types/ink-gradient": "^2.0.1",
+    "ink": "^3.0.8",
+    "ink-big-text": "^1.2.0",
+    "ink-gradient": "^2.0.0",
+    "react": "^17.0.1"
+  },
+  "devDependencies": {
+    "@sindresorhus/tsconfig": "^0.7.0",
+    "@types/react": "^16.9.56",
+    "chalk": "^4.1.0",
+    "eslint-plugin-react": "^7.21.5",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "typescript": "^4.0.5"
+  },
+  "ava": {
+    "typescript": {
+      "extensions": [
+        "tsx"
+      ],
+      "rewritePaths": {
+        "source/": "dist/"
+      }
+    }
+  },
+  "xo": {
+    "extends": "xo-react",
+    "rules": {
+      "react/prop-types": "off"
+    }
+  }
 }
